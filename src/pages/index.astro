@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import VideoBackground from '../components/VideoBackground';
+---
+
+<Layout title="Scroll Video Background">
+  <VideoBackground
+    client:load
+    videoUrl="/Gunrange-flythrough.mp4"
+  />
+
+  <div class="content-wrapper">
+    <section class="hero-section">
+      <div class="section-content">
+        <h1>Scroll-Driven Video</h1>
+        <p>Scroll down to see the video play forward</p>
+        <p>Scroll up to see it play backward</p>
+      </div>
+      <div class="scroll-indicator">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Seamless Integration</h2>
+        <p>The video background responds to your scroll position, creating an immersive experience.</p>
+        <p>As you scroll through the page, the video frames advance or reverse based on your scroll direction.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Perfect Synchronization</h2>
+        <p>The video playback is perfectly synchronized with your scroll position.</p>
+        <p>Scroll progress from 0% to 100% corresponds to video playback from start to finish.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Smooth Performance</h2>
+        <p>Using requestAnimationFrame ensures smooth, performant video scrubbing.</p>
+        <p>The video stays fixed in the background while content scrolls over it.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Built with Astro & React</h2>
+        <p>This demo combines the power of Astro's static site generation with React's component model.</p>
+        <p>The result is a fast, interactive experience with minimal JavaScript overhead.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-content">
+        <h2>Explore More</h2>
+        <p>Continue scrolling to see how the video responds to your movement.</p>
+        <p>Try scrolling at different speeds to see the smooth frame transitions.</p>
+      </div>
+    </section>
+  </div>
+</Layout>
